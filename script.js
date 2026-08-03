@@ -12,3 +12,18 @@ document.querySelectorAll('.nav__links a').forEach((link) => {
     navLinks.classList.remove('nav__links--open');
   });
 });
+
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
+
+document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+
