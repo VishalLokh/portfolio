@@ -520,6 +520,7 @@ main {
 
 .contact__links {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
 }
