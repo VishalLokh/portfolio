@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Vishal Lokhande</title>
+  <meta name="description" content="About Vishal Lokhande — Technical Marketing Engineer specializing in AI Infrastructure, Cloud Networking, and Enterprise Networking." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <a href="contact.html" class="floating-cta">Get in Touch!</a>
+
+  <header class="nav">
+    <a href="index.html" class="nav__brand">VL</a>
+    <nav class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="page-header__scrim" aria-hidden="true"></div>
+      <p class="page-header__eyebrow">Welcome</p>
+      <h1 class="page-header__title">About Me</h1>
+    </section>
+
+    <section class="section reveal">
+      <div class="about__hero">
+        <img src="assets/profile.jpg" alt="Vishal Lokhande" class="about__photo" />
+        <div class="about__content">
+          <p>
+            I'm a Technical Marketing Engineer focused on bridging deep technical networking
+            expertise with clear, compelling product storytelling. My work spans
+            <strong>AI Infrastructure</strong>, <strong>Cloud Networking</strong>, and
+            <strong>Enterprise Networking</strong> — helping organizations understand, adopt,
+            and get the most out of modern network architectures.
+          </p>
+          <p>
+            I spend a lot of time building tools that make complex network operations
+            simpler — from automating configuration migrations to designing intuitive
+            dashboards that turn raw network data into actionable insight.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2 class="section__title"><span>01.</span> Skills &amp; Focus Areas</h2>
+      <div class="skills__grid">
+        <div class="skill-card">
+          <h3>AI Infrastructure</h3>
+          <p>Designing and evangelizing network foundations that power AI/ML workloads at scale.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Cloud Networking</h3>
+          <p>Cloud-managed networking architectures, SD-WAN, and hybrid connectivity strategies.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Enterprise Networking</h3>
+          <p>Campus, branch, and data center networking — from CLI-based systems to cloud-native management.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Automation &amp; Tooling</h3>
+          <p>Building deterministic, privacy-safe automation tools for configuration migration and network insight.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Vishal Lokhande. Built with HTML, CSS &amp; JS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

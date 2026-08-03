@@ -13,15 +13,15 @@
 <body>
   <div class="bg-grid" aria-hidden="true"></div>
 
-  <a href="#contact" class="floating-cta">Get in Touch!</a>
+  <a href="contact.html" class="floating-cta">Get in Touch!</a>
 
   <header class="nav">
-    <a href="#home" class="nav__brand">VL</a>
+    <a href="index.html" class="nav__brand">VL</a>
     <nav class="nav__links">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
     </nav>
     <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -38,8 +38,8 @@
         <p class="hero__role">Technical Marketing Engineer</p>
         <p class="hero__role hero__role--sub">AI Infrastructure &nbsp;|&nbsp; Cloud Networking &nbsp;|&nbsp; Enterprise Networking</p>
         <div class="hero__cta">
-          <a href="#projects" class="btn btn--primary">View Work</a>
-          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+          <a href="projects.html" class="btn btn--primary">View Work</a>
+          <a href="contact.html" class="btn btn--ghost">Get in Touch</a>
         </div>
         <div class="hero__socials">
           <a href="https://github.com/VishalLokh" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
@@ -50,84 +50,26 @@
           </a>
         </div>
       </div>
-      <a href="#about" class="hero__scroll" aria-label="Scroll down">
+      <a href="about.html" class="hero__scroll" aria-label="Scroll down">
         <svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M12 16.5 4.5 9l1.4-1.4L12 13.7l6.1-6.1L19.5 9 12 16.5Z"/></svg>
       </a>
     </section>
 
-    <section id="about" class="section reveal">
-      <h2 class="section__title"><span>01.</span> About Me</h2>
-      <div class="about__content">
-        <p>
-          I'm a Technical Marketing Engineer focused on bridging deep technical networking
-          expertise with clear, compelling product storytelling. My work spans
-          <strong>AI Infrastructure</strong>, <strong>Cloud Networking</strong>, and
-          <strong>Enterprise Networking</strong> — helping organizations understand, adopt,
-          and get the most out of modern network architectures.
-        </p>
-        <p>
-          I spend a lot of time building tools that make complex network operations
-          simpler — from automating configuration migrations to designing intuitive
-          dashboards that turn raw network data into actionable insight.
-        </p>
-      </div>
-    </section>
-
-    <section id="skills" class="section reveal">
-      <h2 class="section__title"><span>02.</span> Skills & Focus Areas</h2>
-      <div class="skills__grid">
-        <div class="skill-card">
-          <h3>AI Infrastructure</h3>
-          <p>Designing and evangelizing network foundations that power AI/ML workloads at scale.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Cloud Networking</h3>
-          <p>Cloud-managed networking architectures, SD-WAN, and hybrid connectivity strategies.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Enterprise Networking</h3>
-          <p>Campus, branch, and data center networking — from CLI-based systems to cloud-native management.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Automation & Tooling</h3>
-          <p>Building deterministic, privacy-safe automation tools for configuration migration and network insight.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section reveal">
-      <h2 class="section__title"><span>03.</span> Featured Project</h2>
-      <div class="project-card">
-        <div class="project-card__header">
-          <h3>Aruba Central Migration Assistant</h3>
-          <p class="project-card__tag">CLI / Classic Central → New Central</p>
-        </div>
-        <p class="project-card__desc">
-          A migration readiness tool that connects to any Aruba Central tenant, discovers the
-          entire deployment, and generates a comprehensive migration plan — without pushing
-          any changes. It bridges the gap between legacy CLI-based templates and the new
-          Element Profiles model, using a deterministic 10-phase pipeline to map every CLI
-          block to its equivalent profile and automatically classify scope across a 5-level
-          hierarchy (Global → Site Collection → Site → Device Group → Device).
-        </p>
-        <ul class="project-card__highlights">
-          <li>Tested on production tenants with <strong>124K+ devices</strong> and <strong>776 groups</strong></li>
-          <li>Full tenant discovery in <strong>~12 minutes</strong> using ~7,300 optimized API calls</li>
-          <li>Deduplicates templates (e.g., 157 groups → 35 unique templates)</li>
-          <li>Generates a 9-tab migration intelligence report: inventory, mapping, compatibility, risks, and strategy</li>
-          <li>Read-only by design — write operations are blocked by default</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="contact" class="section section--contact reveal">
-      <h2 class="section__title"><span>04.</span> Get In Touch</h2>
-      <p class="contact__text">
-        I'm always open to connecting on networking, AI infrastructure, or automation projects.
-      </p>
-      <div class="contact__links">
-        <a href="https://www.linkedin.com/in/vishal-lokhande05/" target="_blank" rel="noopener noreferrer" class="btn btn--primary">LinkedIn</a>
-        <a href="https://github.com/VishalLokh" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">GitHub</a>
+    <section class="section reveal">
+      <h2 class="section__title"><span>01.</span> Explore</h2>
+      <div class="teaser__grid">
+        <a href="about.html" class="teaser-card">
+          <h3>About Me</h3>
+          <p>Who I am, what I focus on, and the skills I bring.</p>
+        </a>
+        <a href="projects.html" class="teaser-card">
+          <h3>Projects</h3>
+          <p>A closer look at the Aruba Central Migration Assistant.</p>
+        </a>
+        <a href="contact.html" class="teaser-card">
+          <h3>Contact</h3>
+          <p>Let's connect on LinkedIn or GitHub.</p>
+        </a>
       </div>
     </section>
   </main>
