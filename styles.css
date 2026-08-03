@@ -128,6 +128,17 @@ main {
   max-width: 720px;
 }
 
+.hero__photo {
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 15%;
+  border: 3px solid var(--accent);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+  margin-bottom: 1.75rem;
+}
+
 .hero__eyebrow {
   color: var(--accent);
   font-weight: 600;
