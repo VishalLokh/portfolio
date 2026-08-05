@@ -461,6 +461,10 @@ main {
   transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
+.project-card + .project-card {
+  margin-top: 1.75rem;
+}
+
 .project-card:hover {
   border-color: var(--accent);
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.3);
@@ -507,6 +511,23 @@ main {
 }
 
 .project-card__highlights strong { color: var(--text); }
+
+.project-card__pdf {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1.5rem;
+  color: var(--accent-2);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.project-card__pdf:hover {
+  border-color: var(--accent-2);
+}
 
 .section--contact {
   text-align: center;

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects — Vishal Lokhande</title>
-  <meta name="description" content="Featured projects by Vishal Lokhande, including the Aruba Central Migration Assistant." />
+  <meta name="description" content="Featured projects by Vishal Lokhande, including the Aruba Central Migration Assistant and CNX Ticket Analyzer." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +36,7 @@
     </section>
 
     <section class="section reveal">
-      <h2 class="section__title"><span>01.</span> Featured Project</h2>
+      <h2 class="section__title"><span>01.</span> Featured Projects</h2>
       <div class="project-card">
         <div class="project-card__header">
           <h3>Aruba Central Migration Assistant</h3>
@@ -57,9 +57,38 @@
           <li>Generates a 9-tab migration intelligence report: inventory, mapping, compatibility, risks, and strategy</li>
           <li>Read-only by design — write operations are blocked by default</li>
         </ul>
+        <a href="assets/central-migration-assistant.pdf" target="_blank" rel="noopener noreferrer" class="project-card__pdf">
+          View one-page summary (PDF)
+        </a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card__header">
+          <h3>CNX Ticket Analyzer</h3>
+          <p class="project-card__tag">Support Operations / Ticket &amp; Issue Cross-Referencing</p>
+        </div>
+        <p class="project-card__desc">
+          A local-first analytics tool that cross-references customer support tickets with
+          engineering issue-tracker entries, surfacing patterns across product component,
+          technology area, and regression trends. It supports both a point-in-time workbook
+          view and a live-query mode against a self-hosted issue tracker, so findings can be
+          a snapshot or always current — all processing happens on the user's own machine,
+          with no data uploaded to any third party.
+        </p>
+        <ul class="project-card__highlights">
+          <li>Cross-references two independent ticket data sources entirely on-device</li>
+          <li>KPI dashboard summarizing ticket volume by customer, component, and technology area</li>
+          <li>Optional live-query mode against a self-hosted issue tracker via a personal access token</li>
+          <li>Multi-select filtering (component, label, status, priority, severity) compiled into a query client-side</li>
+          <li>Paginated browsing with a safety-capped export so large result sets stay manageable</li>
+        </ul>
+        <a href="assets/cnx-ticket-analyzer.pdf" target="_blank" rel="noopener noreferrer" class="project-card__pdf">
+          View one-page summary (PDF)
+        </a>
       </div>
     </section>
   </main>
+
 
   <footer class="footer">
     <p>&copy; <span id="year"></span> Vishal Lokhande. Built with HTML, CSS &amp; JS.</p>
