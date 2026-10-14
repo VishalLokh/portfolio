@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects — Vishal Lokhande</title>
-  <meta name="description" content="Featured projects by Vishal Lokhande, including the Aruba Central Migration Assistant and CNX Ticket Analyzer." />
+  <meta name="description" content="Featured projects by Vishal Lokhande, including the Aruba Central Migration Assistant, CNX Ticket Analyzer, VSX Configuration Web Tool, and Topology-from-PPTX Generator." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -85,6 +85,47 @@
         <a href="assets/cnx-ticket-analyzer.pdf" target="_blank" rel="noopener noreferrer" class="project-card__pdf">
           View one-page summary (PDF)
         </a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card__header">
+          <h3>VSX Configuration Web Tool</h3>
+          <p class="project-card__tag">Switch Configuration / Guided Workflow UI</p>
+        </div>
+        <p class="project-card__desc">
+          A guided web tool for configuring Virtual Switching Extension (VSX) pairs on
+          campus/data-center switches through a cloud networking management API. It
+          replaces a multi-step, easy-to-get-wrong manual CLI process with a visual
+          workflow: pick the two peer switches, assign their scope, set every VSX
+          parameter, then create and verify the configuration in order.
+        </p>
+        <ul class="project-card__highlights">
+          <li>Step-by-step flow: devices → scope discovery → parameters → create → verify</li>
+          <li>Supports both physical inter-switch links and LAG-based ISL configurations</li>
+          <li>Auto-detects and highlights compatible switch models from the live inventory</li>
+          <li>Covers peer roles, role-priority, split-recovery, keepalive timers, and ISL timers</li>
+          <li>Credentials are supplied per-session and never hard-coded or stored remotely</li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card__header">
+          <h3>Topology-from-PPTX Generator</h3>
+          <p class="project-card__tag">Documentation Automation / Diagram Generation</p>
+        </div>
+        <p class="project-card__desc">
+          A small local web app that turns a network topology description into a
+          polished PowerPoint diagram automatically. Upload an icon library and a
+          topology definition (JSON or image), and it lays out devices and
+          connections using the correct vendor icons, producing a presentation-ready
+          slide instead of a hand-built one.
+        </p>
+        <ul class="project-card__highlights">
+          <li>Runs entirely locally — no external service or account required</li>
+          <li>Accepts a reusable icon-library deck so diagrams stay visually consistent</li>
+          <li>Outputs an editable native PowerPoint file, not a flattened image</li>
+          <li>Removes hours of manual drag-and-drop diagramming for documentation and runbooks</li>
+        </ul>
       </div>
     </section>
   </main>
